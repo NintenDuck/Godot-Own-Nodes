@@ -57,31 +57,35 @@ func getDialogue() -> Array:
 	# Print to label
 func nextPhrase() -> void:
 
-	# Makes textIcon a or b depending if it's the last sentence
-	if phraseNum == len(dialog[dialogueID]) - 1:
-		arrowTexture.texture = arrowStates[1]
-	else:
-		arrowTexture.texture = arrowStates[0]
 	
 	# If phrases are finished, then queue_free()
 	if phraseNum >= len(dialog[dialogueID]):
 		queue_free()
 		return
 	# Else
-	finished = false
 
+	
+	finished = false
+	
 	# Assign the json dialog to the node's text
 	txtName.text = dialog[dialogueID][phraseNum]["name"]
 	txtChat.text = dialog[dialogueID][phraseNum]["text"]
 	
 	txtChat.visible_characters = 0
 	
+	
 	# Loop to make text appear at a certain speed
 	while txtChat.visible_characters < len(txtChat.text):
 		txtChat.visible_characters += 1
-
+		
 		nextTextTimer.start()
 		yield(nextTextTimer, "timeout")
+		
+	# Makes textIcon a or b depending if it's the last sentence
+	if phraseNum == len(dialog[dialogueID]) - 1:
+		arrowTexture.texture = arrowStates[1]
+	else:
+		arrowTexture.texture = arrowStates[0]
 
 	# Phrase finished, next sentence
 	finished = true
