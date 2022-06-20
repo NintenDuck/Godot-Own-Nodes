@@ -1,0 +1,17 @@
+[
+    [
+        {"name": "Narrator", "text": "This is the First Conversation"},
+        {"name": "Andres", "text": "I wasn't expecting this thing to actually work out."},
+        {"name": "???", "text": "Me neither."},
+        {"name": "Andres", "text": "..."},
+        {"name": "Andres", "text": "Who the hell are you?\nAnd what are you doing in my house?."},
+        {"name": "???", "text": "Just chilling."},
+        {"name": "Andres", "text": "Bruh."}
+    ],
+    [
+        {"name": "Narrator", "text": "This is the Second Conversation"},
+        {"name": "Andres", "text": "I wasn't expecting this thing to actually work out."},
+        {"name": "???", "text": "Me neither."},
+        {"name": "Andres", "text": "..."}
+    ]
+]
