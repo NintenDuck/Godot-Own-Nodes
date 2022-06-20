@@ -1,4 +1,4 @@
-# TODO: Implementar modularidad
+# TODO: 
 extends Control
 
 onready var txtName = $MarginContainer/DialogueBox/TextMargin/VBoxContainer/NameLabel
@@ -53,8 +53,6 @@ func getDialogue() -> Array:
 	
 	# Print to label
 func nextPhrase() -> void:
-	print(phraseNum)
-	print("String Size:",len(dialog[dialogueID]))
 	if phraseNum >= len(dialog[dialogueID]):
 		queue_free()
 		return
