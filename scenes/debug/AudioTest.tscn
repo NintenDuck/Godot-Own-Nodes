@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/debug/mscButton.gd" type="Script" id=1]
+
+[node name="AudioTest" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="PlaySample1" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -268.0
+margin_right = 128.0
+margin_bottom = -140.0
+text = "Play Sample1"
+script = ExtResource( 1 )
+song = "sample1"
+
+[node name="PlaySample2" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -76.0
+margin_right = 128.0
+margin_bottom = 52.0
+text = "Play Sample2"
+script = ExtResource( 1 )
+song = "sample2"
+
+[node name="PlaySample3" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = 116.0
+margin_right = 128.0
+margin_bottom = 244.0
+text = "Play Sample3"
+script = ExtResource( 1 )
+song = "sample3"
+
+[connection signal="pressed" from="PlaySample1" to="PlaySample1" method="_on_Button_pressed"]
+[connection signal="pressed" from="PlaySample2" to="PlaySample2" method="_on_Button_pressed"]
+[connection signal="pressed" from="PlaySample3" to="PlaySample3" method="_on_Button_pressed"]

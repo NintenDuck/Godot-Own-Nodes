@@ -1,4 +1,5 @@
 extends Control
+# Dialogue to be called and make a dialogue box
 
 onready var txtName = $MarginContainer/DialogueBox/TextMargin/VBoxContainer/NameLabel
 onready var txtChat = $MarginContainer/DialogueBox/TextMargin/VBoxContainer/TextLabel
@@ -7,7 +8,6 @@ onready var arrowTexture = $MarginContainer/DialogueBox/ArrowMargin/ArrowTexture
 
 export(String, "normal", "fast", "veryfast") var textSpeed = "normal"
 export(Array, Texture) var arrowStates
-# export(Array, Texture, "normal", "last") var arrowStates
 export(String, FILE, "*.json") var path_of_dialogue_file
 export(int) var dialogueID = 0
 
