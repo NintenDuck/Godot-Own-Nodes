@@ -50,6 +50,7 @@ func getDialogue() -> Array:
 	# Convert it into a Godot Dictionary
 	file.open(path_of_dialogue_file,File.READ)
 	var file_as_text = file.get_as_text()
+	print(file_as_text)
 	var file_as_dictionary = parse_json(file_as_text)
 	return file_as_dictionary
 	

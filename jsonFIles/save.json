@@ -1,0 +1,41 @@
+[
+    {
+        "player": {
+            "name": "Andres",
+            "level": 4
+        },
+        "level": {
+            "map_name": "map-01",
+            "player_position": {
+                "x": 100,
+                "y": 200
+            }
+        }
+    },
+    {
+        "player": {
+            "name": "Alex",
+            "level": 4
+        },
+        "level": {
+            "map_name": "map-01",
+            "player_position": {
+                "x": 100,
+                "y": 200
+            }
+        }
+    },
+    {
+        "player": {
+            "name": "Cristian",
+            "level": 4
+        },
+        "level": {
+            "map_name": "map-01",
+            "player_position": {
+                "x": 100,
+                "y": 200
+            }
+        }
+    }
+]
